@@ -33,7 +33,7 @@ To run this project, follow this step:
 
 ```
 # Clone this repository
-$ git clone https://github.com/maslahatulka/GoShipp
+$ git clone https://github.com/Kampus-Merdeka-Software-Engineering/FE-Palembang-21.git
 
 # Go into repository
 $ cd GoShipp
