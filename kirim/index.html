@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/kirim/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav-component></nav-component>
+
+    <section class="form container">
+      <form id="multi-step-form" class="form">
+        <div class="form-step" data-step="1">
+          <section class="form-step__box">
+            <h2 class="label">Detail Pengirim</h2>
+            <div class="divider"></div>
+
+            <div class="box">
+              <label class="box__label" for="nama_pengirim"
+                >Nama Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nama_pengirim"
+                id="nama_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="alamat_pengirim"
+                >Alamat Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="alamat_pengirim"
+                id="alamat_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="nomor_pengirim"
+                >Nomor Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nomor_pengirim"
+                id="nomor_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="email_pengirim"
+                >Email Pengirim</label
+              >
+              <input
+                class="box__input"
+                type="email"
+                name="email_pengirim"
+                id="email_pengirim"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="detail_lokasi_pengirim"
+                >Detail Lokasi</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="detail_lokasi_pengirim"
+                id="detail_lokasi_pengirim"
+                required
+              />
+            </div>
+          </section>
+
+          <section class="form-step__box">
+            <h2 class="label">Detail Penerima</h2>
+            <div class="divider"></div>
+
+            <div class="box">
+              <label class="box__label" for="nama_penerima"
+                >Nama Penerima</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nama_penerima"
+                id="nama_penerima"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="alamat_penerima"
+                >Alamat Penerima</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="alamat_penerima"
+                id="alamat_penerima"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="nomor_penerima"
+                >Nomor Penerima</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="nomor_penerima"
+                id="nomor_penerima"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="detail_lokasi_penerima"
+                >Detail Lokasi</label
+              >
+              <input
+                class="box__input"
+                type="text"
+                name="detail_lokasi_penerima"
+                id="detail_lokasi_penerima"
+                required
+              />
+            </div>
+          </section>
+
+          <section class="form-step__box">
+            <h2 class="label">Detail Barang</h2>
+            <div class="divider"></div>
+
+            <div class="box">
+              <label class="box__label" for="ukuran_paket">Berat (Kg)</label>
+              <input
+                class="box__input"
+                type="number"
+                name="ukuran_paket"
+                id="ukuran_paket"
+                placeholder="Berat Kg"
+                min="1"
+                required
+              />
+            </div>
+
+            <div class="box">
+              <label class="box__label" for="tipe">Tipe Layanan</label>
+
+              <select class="box__option" name="tipe_layanan" id="tipe_layanan">
+                <option value="0">Tipe Layanan</option>
+                <option value="GoShipp Sameday">GoShipp Sameday</option>
+                <option value="Instant GoShipp">Instant GoShipp</option>
+                <option value="GoShippBix">GoShippBix</option>
+              </select>
+            </div>
+          </section>
+
+          <button type="button" class="next-step">Selanjutnya</button>
+        </div>
+
+        <div class="form-step" data-step="2">
+          <section class="form-step__box">
+            <h1 class="label">Ringkasan</h1>
+            <div class="divider"></div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Detail Pengirim</h2>
+              <hr />
+
+              <section class="detail__sender">
+                <div class="detail__sender-left">
+                  <h3>Pengirim :</h3>
+                  <h3>No. Telepon :</h3>
+                  <h3>Email :</h3>
+                </div>
+
+                <div class="detail__sender-right">Alamat Pengirim :</div>
+              </section>
+            </div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Detail Penerima</h2>
+              <hr />
+
+              <section class="detail__receiver">
+                <div class="detail__receiver-left">
+                  <h3>Penerima :</h3>
+                  <h3>No. Telepon :</h3>
+                </div>
+
+                <div class="detail__receiver-right">Alamat Penerima :</div>
+              </section>
+            </div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Detail Paket</h2>
+              <hr />
+
+              <section class="detail__package">
+                <div class="detail__package-left">
+                  <h3>Ukuran Paket :</h3>
+                  <h3>Tipe Layanan :</h3>
+                </div>
+              </section>
+            </div>
+
+            <div class="form-step__box">
+              <h2 class="label-small">Pembayaran</h2>
+              <hr />
+
+              <section class="detail__payment">
+                <div class="detail__payment-left">
+                  <h3>Total Pengiriman :</h3>
+                  <h3>Biaya Proteksi :</h3>
+                  <hr />
+                  <h3>Total Pembayaran:</h3>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <button type="button" class="prev-step">Kembali</button>
+          <button type="button" class="next-step">Selanjutnya</button>
+        </div>
+
+        <div class="form-step" data-step="3">
+          <section class="form-step__box">
+            <h2 class="label">Konfirmasi</h2>
+            <div class="divider"></div>
+            <div class="box">
+              <img src="/src/assets/sendImage.svg" alt="succes image" />
+            </div>
+          </section>
+          <button type="button" class="prev-step">Kembali</button>
+          <button type="submit" class="next-step">Selesai</button>
+        </div>
+      </form>
+    </section>
+
+    <footer-component></footer-component>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

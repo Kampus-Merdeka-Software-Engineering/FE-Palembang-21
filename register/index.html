@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/register/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav-component></nav-component>
+
+    <header class="header__register">
+      <h1>Register</h1>
+    </header>
+
+    <section class="register">
+      <form class="register__form">
+        <div class="register__box">
+          <label class="register__form-label" for="username">Username</label>
+          <input
+            class="register__form-input"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+
+          <div class="register__box">
+            <label class="register__form-label" for="email"
+              >Email Address</label
+            >
+            <input
+              class="register__form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="register__box">
+            <label class="register__form-label" for="password">Password</label>
+            <input
+              class="register__form-input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="submit__register">Register</button>
+
+          <div class="massage__link">
+            <p class="massage">
+              Already registered? <a href="/login/">Login</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

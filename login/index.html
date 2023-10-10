@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/login/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav-component></nav-component>
+
+    <header class="header__login">
+      <h1>Login</h1>
+    </header>
+
+    <section class="login">
+      <form class="login__form" id="login">
+        <div class="form__box">
+          <label class="form__label" for="username">Username</label>
+          <input
+            class="form__input"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+        </div>
+
+        <div class="form__box">
+          <label class="form__label" for="password">Password</label>
+          <input
+            class="form__input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="remember-forgot">
+          <label for="input"> <input type="checkbox" />Remember me</label>
+          <a href="#">Forgot password ?</a>
+        </div>
+
+        <button type="submit" class="form__button">Login</button>
+
+        <div class="register__link">
+          <p>Don't have an account? <a href="/register/">Register</a></p>
+        </div>
+      </form>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
